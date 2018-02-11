@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace CvDetection
 {
-    public partial class Form1 : Form
+    public partial class RectanglesForm : Form
     {
-        public Form1()
+        private MainForm parent;
+
+        public RectanglesForm(MainForm mainForm)
         {
             InitializeComponent();
+
+            parent = mainForm;
+        }
+
+        public void ResetUI()
+        {
+
         }
     }
 }
