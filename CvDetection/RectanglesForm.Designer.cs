@@ -31,7 +31,7 @@
             this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.buttonColorPicker = new System.Windows.Forms.Button();
             this.panelColor = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxSize = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonResetContours = new System.Windows.Forms.Button();
@@ -47,6 +47,7 @@
             this.buttonColorPicker.TabIndex = 0;
             this.buttonColorPicker.Text = "Choose Color";
             this.buttonColorPicker.UseVisualStyleBackColor = true;
+            this.buttonColorPicker.Click += new System.EventHandler(this.buttonColorPicker_Click);
             // 
             // panelColor
             // 
@@ -55,12 +56,12 @@
             this.panelColor.Size = new System.Drawing.Size(119, 33);
             this.panelColor.TabIndex = 1;
             // 
-            // textBox1
+            // textBoxSize
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(119, 20);
-            this.textBox1.TabIndex = 2;
+            this.textBoxSize.Location = new System.Drawing.Point(158, 69);
+            this.textBoxSize.Name = "textBoxSize";
+            this.textBoxSize.Size = new System.Drawing.Size(119, 20);
+            this.textBoxSize.TabIndex = 2;
             // 
             // label1
             // 
@@ -75,7 +76,7 @@
             // 
             this.groupBox1.Controls.Add(this.buttonColorPicker);
             this.groupBox1.Controls.Add(this.panelColor);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxSize);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -92,6 +93,7 @@
             this.buttonResetContours.TabIndex = 11;
             this.buttonResetContours.Text = "Hide";
             this.buttonResetContours.UseVisualStyleBackColor = true;
+            this.buttonResetContours.Click += new System.EventHandler(this.buttonResetContours_Click);
             // 
             // buttonContours
             // 
@@ -101,6 +103,7 @@
             this.buttonContours.TabIndex = 10;
             this.buttonContours.Text = "Show";
             this.buttonContours.UseVisualStyleBackColor = true;
+            this.buttonContours.Click += new System.EventHandler(this.buttonContours_Click);
             // 
             // RectanglesForm
             // 
@@ -123,7 +126,7 @@
         private System.Windows.Forms.ColorDialog colorDialog;
         private System.Windows.Forms.Button buttonColorPicker;
         private System.Windows.Forms.Panel panelColor;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxSize;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button buttonResetContours;
